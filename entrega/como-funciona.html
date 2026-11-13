@@ -144,19 +144,39 @@
   }
   @media(max-width: 768px){
     .processo{grid-template-columns:1fr}
-    .nav-links{display:none;flex-direction:column;position:absolute;top:80px;left:0;right:0;background:#fff;padding:24px;border-bottom:1px solid var(--border);box-shadow:0 10px 30px rgba(0,0,0,.1);align-items:flex-start;gap:16px}
+    .nav-links{display:none;flex-direction:column;position:absolute;top:88px;left:0;right:0;background:var(--bg);padding:24px;border-bottom:1px solid var(--border);box-shadow:0 10px 30px rgba(0,0,0,.1);align-items:flex-start;gap:8px}
     .nav-links.nav-open{display:flex}
+    .nav-links a{width:100%;text-align:left;padding:14px 16px;font-size:16px;border-radius:8px}
+    .nav-links a:hover,.nav-links a:focus{background:var(--surface)}
     .burger{display:flex}
-    .page-hero{padding:80px 0}
-    .page-hero h1{font-size:32px}
-    .page-hero p{font-size:17px}
-    .section-title{font-size:30px}
+    .page-hero{padding:70px 0 50px}
+    .page-hero h1{font-size:28px;line-height:1.2}
+    .section-title{font-size:28px}
+    .page-hero p{font-size:16px}
+    .details-grid{grid-template-columns:1fr}
+    .contact-grid{grid-template-columns:1fr}
+    .foot-grid{grid-template-columns:1fr}
+    .foot-bottom{flex-direction:column;gap:12px;text-align:center}
   }
   @media(max-width: 480px){
     .wrap{padding:0 16px}
     .btn{padding:12px 20px;font-size:14px}
     .mark{width:36px;height:36px;font-size:18px}
     .brand-title{font-size:14px}
+    .page-hero h1{font-size:24px}
+    .section-title{font-size:24px}
+    .btn-sm{padding:10px 16px;font-size:13px}
+  }
+
+  /* Garantir tema claro em TODAS as seções no mobile */
+  @media (max-width: 768px){
+    body{background:var(--bg) !important;color:var(--fg) !important}
+    section{background:transparent !important}
+    section[style*="background:var(--surface)"]{background:var(--surface) !important}
+    .property-card,.service-card,.testimonial-card,.detail-card,.faq-item,.contact-info-card{background:var(--surface-card) !important;border-color:var(--border) !important;color:var(--fg) !important}
+    .mark{background:var(--primary) !important;color:var(--accent) !important}
+    .nav-links a{color:var(--primary) !important}
+    .btn-ghost{color:var(--primary) !important;border-color:var(--border) !important}
   }
 </style>
 </head>
