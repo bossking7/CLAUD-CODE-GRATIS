@@ -1,0 +1,221 @@
+2. CABEÇALHO E NAVEGAÇÃO
+
+Desenvolva um cabeçalho profissional contendo:
+
+Logotipo e nome da imobiliária.
+
+Menu: Início, Comprar, Alugar, Sobre nós e Contato.
+
+Botão de destaque para contato pelo WhatsApp.
+
+Menu responsivo para dispositivos móveis.
+
+Cabeçalho fixo ou com comportamento elegante durante a rolagem.
+
+3. HERO SECTION
+
+Crie uma primeira seção impactante, com uma fotografia imobiliária de alta qualidade.
+
+Elementos:
+
+Uma chamada principal que transmita confiança.
+
+Texto curto apresentando os serviços da imobiliária.
+
+Botão para explorar imóveis.
+
+Botão para entrar em contato.
+
+Uma área de pesquisa de imóveis com filtros como localização, tipo e finalidade (comprar ou alugar), caso a estrutura permita.
+
+A primeira dobra precisa causar uma excelente impressão.
+
+4. VITRINE DE IMÓVEIS
+
+Crie uma seção de imóveis em destaque com cards modernos.
+
+Cada card deve apresentar:
+
+Fotografia do imóvel.
+
+Tipo de imóvel.
+
+Localização.
+
+Preço.
+
+Número de quartos, banheiros e vagas, quando disponíveis.
+
+Botão para visualizar detalhes.
+
+Os cards devem ter imagens proporcionais, boa organização e efeitos sutis ao passar o mouse.
+
+5. SOBRE A IMOBILIÁRIA
+
+Desenvolva uma seção institucional apresentando a empresa, sua experiência, seus valores e seu compromisso com os clientes.
+
+Utilize uma composição visual elegante, combinando fotografia e texto.
+
+6. DIFERENCIAIS
+
+Apresente os principais benefícios de trabalhar com a imobiliária:
+
+Atendimento personalizado.
+
+Transparência nas negociações.
+
+Conhecimento do mercado imobiliário.
+
+Suporte durante todo o processo.
+
+7. CONTATO
+
+Crie uma seção de contato com:
+
+Botão destacado para WhatsApp.
+
+Telefone.
+
+E-mail.
+
+Endereço, se disponível.
+
+Formulário de contato, se apropriado.
+
+Não invente dados de contato. Utilize apenas informações existentes no projeto ou deixe campos preparados para preenchimento.
+
+8. RODAPÉ
+
+Crie um rodapé sofisticado contendo:
+
+Logotipo.
+
+Breve descrição da empresa.
+
+Links de navegação.
+
+Informações de contato.
+
+Redes sociais, caso existam.
+
+Direitos reservados.
+
+9. RESPONSIVIDADE
+
+O site precisa funcionar perfeitamente em:
+
+Computadores.
+
+Notebooks.
+
+Tablets.
+
+Smartphones.
+
+Dê atenção especial à experiência mobile.
+
+10. QUALIDADE TÉCNICA
+
+Preserve as tecnologias utilizadas no projeto.
+
+Não instale bibliotecas desnecessárias.
+
+Reutilize componentes quando possível.
+
+Mantenha boas práticas de HTML, CSS e JavaScript.
+
+Garanta acessibilidade e boa legibilidade.
+
+Otimize imagens e carregamento.
+
+Evite erros no console.
+
+Preserve as funcionalidades existentes.
+
+11. EXECUÇÃO
+
+Antes de começar:
+
+Analise toda a estrutura do projeto.
+
+Identifique os componentes e estilos existentes.
+
+Entenda como os dados dos imóveis são apresentados.
+
+Planeje as alterações necessárias.
+
+Depois:
+
+Implemente a reformulação visual.
+
+Ajuste os componentes existentes.
+
+Teste a responsividade.
+
+Verifique links, botões e funcionalidades.
+
+Corrija eventuais problemas.
+
+RESULTADO ESPERADO:
+
+Quero um site imobiliário com aparência de uma empresa profissional e consolidada, com design sofisticado, imagens impactantes, excelente experiência de navegação e foco em transformar visitantes em potenciais clientes.
+
+Não quero apenas mudar cores e fontes. Quero uma verdadeira evolução visual e de experiência do usuário, mantendo a identidade e as funcionalidades úteis do projeto atual.
+
+
+O design atual do site da SP Imobiliária está aprovado como direção visual. Não quero uma nova reformulação estética.
+
+Agora quero que você faça uma auditoria e um refinamento profissional do projeto existente.
+
+PRIORIDADES:
+
+1. INFORMAÇÕES E CONTEÚDO
+- Identifique todas as informações fictícias ou não verificadas.
+- Não invente imóveis, preços, depoimentos, avaliações, clientes, e-mails ou serviços.
+- Substitua depoimentos fictícios por uma seção preparada para depoimentos reais ou remova-os temporariamente.
+- Não apresente preços de serviços sem confirmação.
+- Mantenha os dados de contato somente se já estiverem confirmados.
+- Onde faltarem informações, utilize textos neutros e campos preparados para atualização.
+
+2. IMÓVEIS
+- Melhore a estrutura dos cards.
+- Prepare uma organização que permita cadastrar novos imóveis facilmente.
+- Cada imóvel deve ter espaço para fotos, localização, preço, características e descrição.
+- Não invente imóveis reais.
+- Prepare a estrutura para futuras páginas individuais de imóveis.
+
+3. BUSCA
+- Faça os filtros funcionarem com os imóveis cadastrados.
+- Considere finalidade, tipo e localização.
+- Caso não existam imóveis cadastrados, apresente uma mensagem amigável.
+- Não faça o botão de busca simplesmente redirecionar para o WhatsApp sem utilizar os filtros.
+
+4. WHATSAPP
+- Verifique todos os links.
+- Configure mensagens personalizadas conforme o imóvel selecionado.
+- Utilize o número de WhatsApp já presente no projeto, sem inventar outro.
+
+5. RESPONSIVIDADE
+- Revise o menu mobile.
+- Ajuste espaçamentos, tipografia e cards em telas pequenas.
+- Verifique se não existe rolagem horizontal indesejada.
+
+6. QUALIDADE TÉCNICA
+- Verifique os caminhos de todas as imagens.
+- Corrija links quebrados.
+- Revise o HTML, CSS e JavaScript.
+- Verifique o funcionamento das duas páginas.
+- Corrija problemas de acessibilidade.
+- Verifique o console do navegador.
+
+7. SEO
+- Revise títulos e descrições.
+- Utilize textos relevantes para o mercado imobiliário de Canaã dos Carajás - PA.
+- Prepare os metadados para compartilhamento nas redes sociais.
+
+IMPORTANTE:
+Preserve a identidade visual atual: azul-marinho, dourado, branco, tipografia Sora e Work Sans.
+
+Não comece novamente. Trabalhe sobre os arquivos existentes.
+
+Ao finalizar, apresente uma lista das alterações realizadas, dos problemas corrigidos e das informações que ainda dependem de confirmação da proprietária.

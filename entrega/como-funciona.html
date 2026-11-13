@@ -3,328 +3,483 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Como Funciona | SP Imobiliária</title>
-<meta name="description" content="Descubra como funciona o processo de compra, venda e locação com a SP Imobiliária - Silvia Pazzinatto em Canaã dos Carajás - PA." />
+<title>Como Funciona | SP Imobiliária - Silvia Pazzinatto | Consultoria Imobiliária em Canaã dos Carajás - PA</title>
+<meta name="description" content="Entenda o processo de compra, venda e locação com a SP Imobiliária em Canaã dos Carajás - PA. Metodologia transparente, segura e estruturada do primeiro contato à entrega das chaves." />
+<meta name="keywords" content="como funciona imobiliária Canaã dos Carajás, processo compra imóvel Pará, locação imóveis PA, Silvia Pazzinatto consultoria" />
+<meta property="og:title" content="Como Funciona | SP Imobiliária - Silvia Pazzinatto" />
+<meta property="og:description" content="Processo transparente e seguro de compra, venda e locação de imóveis em Canaã dos Carajás - PA." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="site_moderno/imgs/bg-house.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Como Funciona | SP Imobiliária" />
+<meta name="twitter:description" content="Processo transparente e seguro de compra, venda e locação de imóveis em Canaã dos Carajás - PA." />
 
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
 <style>
   :root{
-    --accent:#FFD700;
-    --bg:#000000;
-    --fg:#ffffff;
-    --muted:#a0a0a0;
-    --surface:#1a1a1a;
-    --border:rgba(255,255,255,.2);
+    --bg:#ffffff;
+    --surface:#f8f9fa;
+    --surface-card:#ffffff;
+    --fg:#111827;
+    --muted:#4b5563;
+    --accent:#c5a059;
+    --accent-dark:#a3803f;
+    --primary:#1e293b;
+    --border:rgba(0,0,0,.08);
+    --border-hover:rgba(197,160,89,.4);
     --radius:12px;
-    --shadow:0 8px 25px rgba(0,0,0,.25);
+    --shadow:0 10px 30px rgba(0,0,0,.06);
+    --shadow-hover:0 20px 40px rgba(0,0,0,.1);
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
   body{background:var(--bg);color:var(--fg);font-family:"Work Sans",sans-serif;line-height:1.75;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-  h1,h2,h3{font-family:"Sora",sans-serif;font-weight:600}
+  h1,h2,h3,h4{font-family:"Sora",sans-serif;font-weight:600;color:var(--primary)}
   a{color:inherit;text-decoration:none}
   img{max-width:100%;display:block}
-  .wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 24px}
+  .wrap{width:100%;max-width:1200px;margin:0 auto;padding:0 24px}
 
-  header{position:sticky;top:0;z-index:100;background:var(--bg);border-bottom:1px solid var(--border);height:68px;display:flex;align-items:center;justify-content:space-between;gap:16px}
-  .brand{display:flex;align-items:center;gap:10px}
-  .mark{font-family:"Sora",sans-serif;font-size:22px;font-weight:700;letter-spacing:-1px;background:linear-gradient(135deg,var(--accent) 0%,#fff 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-  .nav-links{display:flex;gap:24px;font-size:15px;color:var(--fg);align-items:center}
-  .nav-links a{opacity:0.85;transition:0.25s}
-  .nav-links a:hover{color:var(--accent);opacity:1}
+  /* HEADER */
+  header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.98);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);height:88px;display:flex;align-items:center;transition:0.3s}
+  header.scrolled{box-shadow:0 4px 20px rgba(0,0,0,.06);border-bottom-color:var(--accent)}
+  .header-inner{display:flex;align-items:center;justify-content:space-between;width:100%;gap:40px}
+  .brand{display:flex;align-items:center;gap:14px;flex-shrink:0}
+  .mark{width:48px;height:48px;background:var(--primary);color:var(--accent);border-radius:10px;display:grid;place-items:center;font-family:"Sora",sans-serif;font-size:22px;font-weight:700;letter-spacing:-1px;box-shadow:0 4px 14px rgba(30,41,59,.25)}
+  .brand-text{display:flex;flex-direction:column}
+  .brand-title{font-family:"Sora",sans-serif;font-size:17px;font-weight:700;color:var(--primary);letter-spacing:0.3px;line-height:1.2}
+  .brand-sub{font-size:10.5px;text-transform:uppercase;letter-spacing:2px;color:var(--muted);font-weight:500}
 
-  .btn{display:inline-block;padding:14px 28px;border-radius:var(--radius);font-weight:600;text-decoration:none;cursor:pointer;transition:0.3s;border:none}
-  .btn-primary{background:var(--accent);color:#000}
-  .btn-primary:hover{filter:brightness(1.2)}
-  .btn-ghost{background:var(--surface);color:var(--fg);border:1px solid var(--border)}
-  .btn-ghost:hover{background:var(--accent);color:#000;border-color:var(--accent)}
+  .nav-links{display:flex;gap:8px;font-size:14.5px;color:var(--primary);align-items:center;font-weight:500;flex:1;justify-content:center}
+  .nav-links a{opacity:0.75;transition:0.25s;position:relative;padding:10px 4px;border-radius:8px}
+  .nav-links a::after{content:'';position:absolute;bottom:4px;left:50%;width:0;height:2px;background:var(--accent);transition:0.25s;transform:translateX(-50%)}
+  .nav-links a:hover,.nav-links a:focus{opacity:1;color:var(--accent);background:rgba(197,160,89,.08)}
+  .nav-links a:hover::after,.nav-links a:focus::after{width:70%}
+  .nav-links a[aria-current="page"]{opacity:1;color:var(--primary);font-weight:600}
+  .nav-links a[aria-current="page"]::after{width:70%;background:var(--accent)}
+
+  .nav-end{display:flex;align-items:center;gap:14px;flex-shrink:0}
+  .burger{display:none;background:transparent;border:1px solid var(--border);border-radius:10px;width:44px;height:44px;cursor:pointer;flex-direction:column;justify-content:center;align-items:center;gap:6px;transition:0.2s}
+  .burger:hover{background:var(--surface);border-color:var(--accent)}
+  .burger span{width:22px;height:2px;background:var(--primary);display:block;transition:0.3s;border-radius:2px}
+  .burger[aria-expanded="true"] span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+  .burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+  .burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+
+  /* BUTTONS */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 28px;border-radius:var(--radius);font-weight:600;text-decoration:none;cursor:pointer;transition:0.3s;border:none;font-size:15px}
+  .btn-primary{background:var(--primary);color:#fff}
+  .btn-primary:hover{background:var(--accent);color:#fff;transform:translateY(-2px)}
+  .btn-accent{background:var(--accent);color:#fff}
+  .btn-accent:hover{background:var(--accent-dark);transform:translateY(-2px)}
+  .btn-ghost{background:transparent;color:var(--primary);border:1px solid var(--border)}
+  .btn-ghost:hover{border-color:var(--accent);color:var(--accent);background:var(--surface)}
   .btn-sm{padding:10px 20px;font-size:14px}
 
+  /* PAGE HERO */
   .page-hero{
     position:relative;
-    padding:100px 0;
-    background-image:url('site_moderno/imgs/bg-house.jpg');
+    padding:120px 0;
+    background-image:linear-gradient(rgba(30,41,59,.75), rgba(30,41,59,.85)), url('site_moderno/imgs/bg-house.jpg');
     background-size:cover;
     background-position:center;
-    background-repeat:no-repeat;
     text-align:center;
+    color:#fff;
   }
-  .page-hero::before{
-    content:'';
-    position:absolute;
-    inset:0;
-    background:rgba(0,0,0,.7);
+  .page-hero h1{font-size:48px;margin-bottom:16px;color:#fff}
+  .page-hero p{font-size:19px;color:rgba(255,255,255,0.85);max-width:70ch;margin:0 auto;font-weight:300}
+
+  section{padding:100px 0}
+  .sec-head{text-align:center;margin-bottom:60px}
+  .section-tag{display:inline-block;font-size:12px;text-transform:uppercase;letter-spacing:2px;color:var(--accent);margin-bottom:12px;font-weight:600}
+  .section-title{font-size:38px;margin-bottom:16px}
+  .section-sub{color:var(--muted);max-width:60ch;margin:0 auto;font-size:17px;font-weight:300}
+
+  /* PROCESSO */
+  .processo{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+  .passo{background:var(--surface);border-radius:var(--radius);padding:36px;border:1px solid var(--border);transition:0.3s}
+  .passo:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:var(--border-hover);background:#fff}
+  .passo-number{width:50px;height:50px;border-radius:12px;background:rgba(197,160,89,0.1);color:var(--accent);display:grid;place-items:center;font-weight:700;font-size:20px;margin-bottom:20px;font-family:"Sora",sans-serif}
+  .passo h3{font-size:20px;margin-bottom:12px}
+  .passo p{color:var(--muted);font-size:15px;font-weight:300}
+
+  /* DETALHES POR TIPO */
+  .details-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:32px}
+  .detail-card{background:var(--surface-card);border-radius:var(--radius);padding:36px;border:1px solid var(--border);box-shadow:var(--shadow)}
+  .detail-card h3{font-size:22px;margin-bottom:12px;color:var(--primary)}
+  .detail-card p{color:var(--muted);font-weight:300}
+  .detail-card ul{margin-top:20px;padding-left:20px;color:var(--muted)}
+  .detail-card li{margin-bottom:10px;font-size:15px}
+
+  /* FAQ */
+  .faq-container{max-width:800px;margin:0 auto}
+  .faq-item{background:var(--surface);margin-bottom:16px;border-radius:var(--radius);border:1px solid var(--border);overflow:hidden}
+  .faq-item details{padding:24px;cursor:pointer}
+  .faq-item summary{font-weight:600;font-size:17px;color:var(--primary);list-style:none;display:flex;justify-content:space-between;align-items:center}
+  .faq-item summary::-webkit-details-marker{display:none}
+  .faq-item summary::after{content:'+';font-size:22px;color:var(--accent)}
+  .faq-item details[open] summary::after{content:'−'}
+  .faq-item p{color:var(--muted);margin-top:14px;font-size:15px}
+
+  /* CTA FINAL */
+  .cta-final{background:var(--surface);border-top:1px solid var(--border);text-align:center;padding:80px 0}
+
+  /* RODAPÉ */
+  footer{background:var(--primary);color:#fff;padding:80px 0 30px}
+  .foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px;margin-bottom:60px}
+  .foot-brand .mark{background:var(--accent);color:#fff;margin-bottom:16px}
+  .foot-brand p{color:rgba(255,255,255,0.7);font-size:15px;margin-top:14px;font-weight:300}
+  .foot-col h4{font-size:14px;letter-spacing:1.5px;text-transform:uppercase;color:#fff;margin-bottom:20px;font-weight:600}
+  .foot-col a, .foot-col span{display:block;color:rgba(255,255,255,0.7);font-size:15px;margin-bottom:12px;transition:0.2s}
+  .foot-col a:hover{color:var(--accent)}
+  .foot-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:30px;border-top:1px solid rgba(255,255,255,0.1);color:rgba(255,255,255,0.6);font-size:14px}
+
+  .float-wa{position:fixed;right:30px;bottom:30px;z-index:100;background:#25d366;color:#fff;border-radius:999px;padding:14px 24px;font-weight:600;font-size:15px;box-shadow:0 10px 25px rgba(37,211,102,.3);display:flex;align-items:center;gap:10px;transition:0.3s}
+  .float-wa:hover{transform:translateY(-3px)}
+
+  @media(max-width: 1024px){
+    .processo{grid-template-columns:repeat(2,1fr)}
+    .details-grid{grid-template-columns:1fr}
+    .foot-grid{grid-template-columns:1fr}
   }
-  .page-hero .wrap{position:relative;z-index:1}
-  .page-hero h1{font-size:52px;line-height:1.1;margin-bottom:16px}
-  .page-hero p{font-size:20px;color:var(--muted);max-width:70ch;margin:0 auto}
-
-  section{padding:80px 0}
-  .sec-head{text-align:center;margin-bottom:50px}
-  .section-title{font-size:42px;margin-bottom:16px}
-  .section-sub{color:var(--muted);max-width:60ch;margin:0 auto;font-size:17px}
-
-  /* Processo */
-  .processo{display:grid;grid-template-columns:1fr;gap:24px}
-  @media(min-width:768px){.processo{grid-template-columns:repeat(2,1fr)}}
-  @media(min-width:1024px){.processo{grid-template-columns:repeat(4,1fr)}}
-
-  .passo{background:var(--surface);border-radius:var(--radius);padding:36px;text-align:center;border:1px solid var(--border);transition:0.3s}
-  .passo:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
-  .passo-number{width:60px;height:60px;border-radius:50%;background:var(--accent);color:#000;display:grid;place-items:center;font-weight:700;font-size:24px;margin:0 auto 20px}
-  .passo h3{font-size:22px;margin-bottom:12px}
-  .passo p{color:var(--muted);font-size:15px}
-
-  /* Detalhes extras */
-  .details-grid{display:grid;grid-template-columns:1fr;gap:24px}
-  @media(min-width:768px){.details-grid{grid-template-columns:repeat(2,1fr)}}
-  .detail-card{background:var(--surface);border-radius:var(--radius);padding:32px;border:1px solid var(--border)}
-  .detail-card h3{font-size:22px;margin-bottom:12px;color:var(--accent)}
-  .detail-card p{color:var(--muted)}
-  .detail-card ul{margin-top:16px;padding-left:20px;color:var(--muted)}
-  .detail-card li{margin-bottom:8px}
-
-  footer{padding:48px 0 32px;border-top:1px solid var(--border);background:var(--bg)}
-  .foot-grid{display:grid;gap:40px;grid-template-columns:1fr}
-  @media(min-width:768px){.foot-grid{grid-template-columns:1.5fr 1fr 1fr 1fr}}
-  .foot-brand p{margin-top:14px;color:var(--muted)}
-  .float-wa{position:fixed;right:24px;bottom:24px;z-index:100;background:#25d366;color:#fff;border-radius:999px;padding:14px 20px;font-weight:600;font-size:15px;box-shadow:0 12px 30px rgba(0,0,0,.3)}
-
-  @media (max-width: 768px){
-    .nav-links{display:none;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--bg);padding:20px;border-bottom:1px solid var(--border)}
-    .nav-open{display:flex}
-    .burger{display:inline-flex;flex-direction:column;gap:6px;background:transparent;border:1px solid var(--border);border-radius:10px;padding:11px 10px;cursor:pointer}
-    .burger span{width:18px;height:1.5px;background:var(--fg);display:block}
+  @media(max-width: 768px){
+    .processo{grid-template-columns:1fr}
+    .nav-links{display:none;flex-direction:column;position:absolute;top:80px;left:0;right:0;background:#fff;padding:24px;border-bottom:1px solid var(--border);box-shadow:0 10px 30px rgba(0,0,0,.1);align-items:flex-start;gap:16px}
+    .nav-links.nav-open{display:flex}
+    .burger{display:flex}
+    .page-hero{padding:80px 0}
+    .page-hero h1{font-size:32px}
+    .page-hero p{font-size:17px}
+    .section-title{font-size:30px}
+  }
+  @media(max-width: 480px){
+    .wrap{padding:0 16px}
+    .btn{padding:12px 20px;font-size:14px}
+    .mark{width:36px;height:36px;font-size:18px}
+    .brand-title{font-size:14px}
   }
 </style>
 </head>
 <body>
 
-<header>
-  <div class="wrap" style="display:flex;justify-content:space-between;align-items:center;height:100%">
-    <div class="brand"><span class="mark">SP</span><span>Imobiliária</span></div>
-    <nav class="nav-links" id="nav">
+<header id="header">
+  <div class="wrap header-inner">
+    <div class="brand">
+      <div class="mark" aria-label="SP Imobiliária">SP</div>
+      <div class="brand-text">
+        <span class="brand-title">SP Imobiliária</span>
+        <span class="brand-sub">Silvia Pazzinatto</span>
+      </div>
+    </div>
+    <nav class="nav-links" id="nav" aria-label="Navegação principal">
       <a href="index.html">Início</a>
-      <a href="como-funciona.html">Como Funciona</a>
+      <a href="como-funciona.html" aria-current="page">Como Funciona</a>
+      <a href="index.html#imoveis">Imóveis</a>
       <a href="index.html#servicos">Serviços</a>
       <a href="index.html#contato">Contato</a>
     </nav>
     <div class="nav-end">
-      <a class="btn btn-sm btn-primary" href="https://wa.me/5594981598881" target="_blank">WhatsApp</a>
-      <button class="burger" type="button" aria-label="Menu"><span></span><span></span></button>
+      <a class="btn btn-sm btn-accent" href="https://wa.me/5594981598881?text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20Como%20Funciona%20e%20gostaria%20de%20falar%20com%20um%20consultor." target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp">WhatsApp</a>
+      <button class="burger" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </div>
 </header>
 
 <main>
   <!-- PAGE HERO -->
-  <section class="page-hero">
+  <section class="page-hero" aria-labelledby="page-hero-title">
     <div class="wrap">
-      <h1>Como Funciona</h1>
-      <p>Nosso processo foi desenhado para ser simples, transparente e sem burocracia desnecessária.</p>
+      <span class="section-tag" style="color:#fff;background:rgba(255,255,255,0.1);padding:6px 16px;border-radius:999px;border:1px solid rgba(255,255,255,0.2)">Nosso Processo</span>
+      <h1 id="page-hero-title">Como Funciona</h1>
+      <p>Um método transparente, seguro e estruturado para guiar você do primeiro contato até a entrega das chaves.</p>
     </div>
   </section>
 
   <!-- PASSO A PASSO -->
-  <section>
+  <section aria-labelledby="processo-title">
     <div class="wrap">
       <div class="sec-head">
-        <span style="display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);border:1px solid var(--accent);border-radius:999px;padding:8px 16px">Nosso Processo</span>
-        <h2 class="section-title">Do primeiro contato à entrega das chaves</h2>
-        <p class="section-sub">Acompanhamos você em cada etapa, garantindo segurança e tranquilidade.</p>
+        <span class="section-tag">Metodologia SP</span>
+        <h2 id="processo-title" class="section-title">Etapas da Consultoria</h2>
+        <p class="section-sub">Acompanhamento dedicado em cada fase da sua jornada imobiliária.</p>
       </div>
       <div class="processo">
-        <div class="passo">
-          <div class="passo-number">1</div>
-          <h3>Consultoria Gratuita</h3>
-          <p>Conversa inicial pelo WhatsApp para entender sua necessidade: compra, venda ou locação. Sem compromisso.</p>
-        </div>
-        <div class="passo">
-          <div class="passo-number">2</div>
-          <h3>Análise de Perfil</h3>
-          <p>Levantamos seus critérios (localização, orçamento, características) e selecionamos as melhores opções.</p>
-        </div>
-        <div class="passo">
-          <div class="passo-number">3</div>
-          <h3>Visitas Agendadas</h3>
-          <p>Agendamos visitas aos imóveis selecionados no melhor horário para você, com acompanhamento da nossa equipe.</p>
-        </div>
-        <div class="passo">
-          <div class="passo-number">4</div>
-          <h3>Negociação</h3>
-          <p>Conduzimos a negociação com transparência, protegendo seus interesses e buscando as melhores condições.</p>
-        </div>
-        <div class="passo">
-          <div class="passo-number">5</div>
-          <h3>Documentação</h3>
-          <p>Cuidamos de toda parte burocrática: contratos, escritura, registro, financiamento. Você só assina.</p>
-        </div>
-        <div class="passo">
-          <div class="passo-number">6</div>
-          <h3>Entrega & Pós-Venda</h3>
-          <p>Entregamos as chaves e seguimos à disposição para qualquer necessidade futura.</p>
-        </div>
+        <article class="passo" aria-labelledby="passo1-title">
+          <div class="passo-number" aria-hidden="true">01</div>
+          <h3 id="passo1-title">Consultoria Inicial</h3>
+          <p>Conversa detalhada para entender seus objetivos: compra, venda ou locação, definindo orçamento e critérios essenciais.</p>
+        </article>
+        <article class="passo" aria-labelledby="passo2-title">
+          <div class="passo-number" aria-hidden="true">02</div>
+          <h3 id="passo2-title">Curadoria de Imóveis</h3>
+          <p>Seleção criteriosa de opções alinhadas ao seu perfil, evitando perda de tempo com visitas desnecessárias.</p>
+        </article>
+        <article class="passo" aria-labelledby="passo3-title">
+          <div class="passo-number" aria-hidden="true">03</div>
+          <h3 id="passo3-title">Visitas Guiadas</h3>
+          <p>Agendamento flexível com acompanhamento técnico da nossa equipe para esclarecer todas as dúvidas no local.</p>
+        </article>
+        <article class="passo" aria-labelledby="passo4-title">
+          <div class="passo-number" aria-hidden="true">04</div>
+          <h3 id="passo4-title">Negociação Segura</h3>
+          <p>Condução transparente de propostas com foco em proteger seus interesses e alcançar o melhor acordo.</p>
+        </article>
+        <article class="passo" aria-labelledby="passo5-title">
+          <div class="passo-number" aria-hidden="true">05</div>
+          <h3 id="passo5-title">Assessoria Documental</h3>
+          <p>Verificação jurídica completa de certidões, contratos, escrituras e financiamento bancário.</p>
+        </article>
+        <article class="passo" aria-labelledby="passo6-title">
+          <div class="passo-number" aria-hidden="true">06</div>
+          <h3 id="passo6-title">Entrega & Pós-Venda</h3>
+          <p>Assinatura, registro, entrega de chaves e suporte contínuo para qualquer necessidade futura.</p>
+        </article>
       </div>
     </div>
   </section>
 
   <!-- DETALHES POR TIPO -->
-  <section style="background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+  <section style="background:var(--surface)" aria-labelledby="modalidades-title">
     <div class="wrap">
       <div class="sec-head">
-        <span style="display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);border:1px solid var(--accent);border-radius:999px;padding:8px 16px">Por Tipo de Negócio</span>
-        <h2 class="section-title">O que muda se você quer comprar, vender ou alugar</h2>
-        <p class="section-sub">Adaptamos o processo para cada situação.</p>
+        <span class="section-tag">Modalidades</span>
+        <h2 id="modalidades-title" class="section-title">Soluções Adaptadas à Sua Necessidade</h2>
+        <p class="section-sub">Conheça os diferenciais de cada tipo de operação conosco.</p>
       </div>
       <div class="details-grid">
-        <div class="detail-card">
+        <article class="detail-card">
           <h3>🏠 Quero Comprar</h3>
-          <p>Do sonho à chave na mão.</p>
+          <p>Do sonho à chave na mão com total segurança jurídica.</p>
           <ul>
-            <li>Definição de orçamento e perfil do imóvel</li>
-            <li>Curadoria de ofertas exclusivas</li>
-            <li>Agendamento de visitas otimizado</li>
-            <li>Análise de documentação do imóvel</li>
-            <li>Negociação de preço e condições</li>
-            <li>Assessoria em financiamento (se necessário)</li>
-            <li>Escritura, registro e entrega de chaves</li>
+            <li>Definição precisa de perfil e orçamento</li>
+            <li>Curadoria de oportunidades exclusivas</li>
+            <li>Análise rigorosa da documentação do imóvel</li>
+            <li>Negociação de valores e condições de pagamento</li>
+            <li>Assessoria completa em financiamento imobiliário</li>
           </ul>
-        </div>
-        <div class="detail-card">
+          <div style="margin-top:24px">
+            <a href="https://wa.me/5594981598881?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20comprar%20um%20im%C3%B3vel%20e%20gostaria%20de%20agendar%20uma%20consultoria." class="btn btn-accent" target="_blank" rel="noopener noreferrer">Iniciar Minha Busca</a>
+          </div>
+        </article>
+        <article class="detail-card">
           <h3>💰 Quero Vender</h3>
-          <p>Valorizamos seu imóvel e fechamos rápido.</p>
+          <p>Valorização máxima do seu patrimônio e liquidez ágil.</p>
           <ul>
-            <li>Avaliação técnica de mercado (gratuita)</li>
-            <li>Estratégia de precificação e divulgação</li>
-            <li>Fotos profissionais e anúncios nos portais</li>
-            <li>Filtragem e agendamento de visitas</li>
-            <li>Negociação de propostas</li>
-            <li>Gestão de documentação até a escritura</li>
-            <li>Pós-venda e suporte contábil</li>
+            <li>Avaliação técnica de mercado gratuita</li>
+            <li>Estratégia de preço e divulgação direcionada</li>
+            <li>Produção visual de alta qualidade</li>
+            <li>Qualificação prévia de potenciais compradores</li>
+            <li>Gestão completa até a escritura definitiva</li>
           </ul>
-        </div>
-        <div class="detail-card">
+          <div style="margin-top:24px">
+            <a href="https://wa.me/5594981598881?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20vender%20meu%20im%C3%B3vel%20e%20gostaria%20de%20solicitar%20uma%20avalia%C3%A7%C3%A3o%20gratuita." class="btn btn-accent" target="_blank" rel="noopener noreferrer">Solicitar Avaliação</a>
+          </div>
+        </article>
+        <article class="detail-card">
           <h3>🔑 Quero Alugar</h3>
-          <p>Locação sem dor de cabeça.</p>
+          <p>Locação sem estresse para proprietários e inquilinos.</p>
           <ul>
-            <li>Definição de perfil do inquilino ideal</li>
-            <li>Divulgação em portais e redes</li>
-            <li>Análise de crédito e cadastro completo</li>
-            <li>Vistoria de entrada documentada</li>
-            <li>Contrato com garantias jurídicas</li>
-            <li>Gestão de aluguéis e repasses (opcional)</li>
-            <li>Vistoria de saída e devolução de caução</li>
+            <li>Análise detalhada de cadastro e crédito</li>
+            <li>Vistorias de entrada e saída documentadas</li>
+            <li>Contratos seguros com garantias jurídicas</li>
+            <li>Gestão de repasses e suporte contínuo</li>
           </ul>
-        </div>
-        <div class="detail-card">
+          <div style="margin-top:24px">
+            <a href="https://wa.me/5594981598881?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20alugar%20um%20im%C3%B3vel%20e%20gostaria%20de%20conhecer%20as%20op%C3%A7%C3%B5es%20dispon%C3%ADveis." class="btn btn-accent" target="_blank" rel="noopener noreferrer">Ver Imóveis para Locação</a>
+          </div>
+        </article>
+        <article class="detail-card">
           <h3>📊 Quero Avaliar</h3>
-          <p>Precificação justa baseada em dados.</p>
+          <p>Precificação realista baseada em dados concretos.</p>
           <ul>
-            <li>Visita técnica ao imóvel</li>
-            <li>Análise comparativa de mercado (recentes)</li>
-            <li>Relatório com faixa de preço realista</li>
-            <li>Sugestão de melhorias para valorizar</li>
-            <li>Entregue em PDF, válido por 90 dias</li>
+            <li>Visita técnica presencial ao imóvel</li>
+            <li>Estudo comparativo de mercado (recentes)</li>
+            <li>Laudo formal em PDF válido por 90 dias</li>
+            <li>Recomendações para valorização de mercado</li>
           </ul>
-        </div>
+          <div style="margin-top:24px">
+            <a href="https://wa.me/5594981598881?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20uma%20avalia%C3%A7%C3%A3o%20t%C3%A9cnica%20do%20meu%20im%C3%B3vel." class="btn btn-accent" target="_blank" rel="noopener noreferrer">Solicitar Laudo</a>
+          </div>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- PERGUNTAS COMUNS -->
-  <section>
+  <!-- FAQ -->
+  <section aria-labelledby="faq-title">
     <div class="wrap">
       <div class="sec-head">
-        <span style="display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);border:1px solid var(--accent);border-radius:999px;padding:8px 16px">Dúvidas Frequentes</span>
-        <h2 class="section-title">Respostas rápidas</h2>
-        <p class="section-sub">As perguntas que mais recebemos sobre o processo.</p>
+        <span class="section-tag">Esclarecimentos</span>
+        <h2 id="faq-title" class="section-title">Perguntas Frequentes</h2>
+        <p class="section-sub">Tudo o que você precisa saber sobre nossos processos.</p>
       </div>
-      <div style="max-width:800px;margin:0 auto">
-        <details style="margin-bottom:16px;padding:20px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius)">
-          <summary style="font-weight:600;cursor:pointer">Preciso pagar algo antes de fechar negócio?</summary>
-          <p style="color:var(--muted);margin-top:10px">Não. Nossa remuneração é por comissão, paga apenas no sucesso da transação. Avaliação de imóvel para venda é gratuita.</p>
-        </details>
-        <details style="margin-bottom:16px;padding:20px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius)">
-          <summary style="font-weight:600;cursor:pointer">Quanto tempo leva para vender/alugar?</summary>
-          <p style="color:var(--muted);margin-top:10px">Venda: média de 60 a 120 dias (depende do preço e localização). Locação: média de 15 a 30 dias com precificação correta.</p>
-        </details>
-        <details style="margin-bottom:16px;padding:20px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius)">
-          <summary style="font-weight:600;cursor:pointer">Vocês cuidam do financiamento bancário?</summary>
-          <p style="color:var(--muted);margin-top:10px">Sim, assessoramos na escolha do melhor banco, simulação e envio de documentação até a aprovação.</p>
-        </details>
-        <details style="margin-bottom:16px;padding:20px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius)">
-          <summary style="font-weight:600;cursor:pointer">Atendem apenas Canaã dos Carajás?</summary>
-          <p style="color:var(--muted);margin-top:10px">Nosso foco é Canaã e região, mas temos parceiros em outras cidades do Pará e Tocantins.</p>
-        </details>
+      <div class="faq-container">
+        <div class="faq-item">
+          <details>
+            <summary>Preciso pagar algo antes de fechar negócio?</summary>
+            <p>Não. Nossa remuneração é baseada em comissão sobre o sucesso da transação. A avaliação imobiliária para venda é totalmente gratuita.</p>
+          </details>
+        </div>
+        <div class="faq-item">
+          <details>
+            <summary>Quanto tempo leva em média para vender um imóvel?</summary>
+            <p>O prazo médio varia entre 60 a 120 dias, dependendo diretamente da precificação correta, localização e tipo de imóvel.</p>
+          </details>
+        </div>
+        <div class="faq-item">
+          <details>
+            <summary>Vocês atendem fora de Canaã dos Carajás?</summary>
+            <p>Nosso foco principal é Canaã dos Carajás e região, mas contamos com rede de parceiros para demandas específicas em outras cidades do Pará e Tocantins.</p>
+          </details>
+        </div>
+        <div class="faq-item">
+          <details>
+            <summary>Como funciona a assessoria para financiamento?</summary>
+            <p>Acompanhamos todo o processo: simulação nas principais instituições, comparação de taxas, envio de documentação e acompanhamento até a liberação do crédito.</p>
+          </details>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- CTA FINAL -->
-  <section style="background:var(--surface);border-top:1px solid var(--border)">
-    <div class="wrap" style="text-align:center;padding:80px 0">
-      <h2>Pronto para começar?</h2>
-      <p style="color:var(--muted);margin:16px auto 32px;max-width:60ch">Fale com a nossa equipe pelo WhatsApp e tire todas as dúvidas. Sem compromisso.</p>
-      <div style="display:flex;gap:12px;justify-content:center">
-        <a href="https://wa.me/5594981598881" class="btn btn-primary" target="_blank">Falar no WhatsApp</a>
+  <section class="cta-final" aria-labelledby="cta-title">
+    <div class="wrap">
+      <h2 id="cta-title">Pronto para Começar?</h2>
+      <p style="color:var(--muted);margin:16px auto 32px;max-width:60ch">Fale com nossa equipe pelo WhatsApp e tire todas as dúvidas. Atendimento personalizado, sem compromisso.</p>
+      <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+        <a href="https://wa.me/5594981598881?text=Ol%C3%A1%2C%20gostaria%20de%20iniciar%20meu%20atendimento%20com%20a%20SP%20Imobili%C3%A1ria." class="btn btn-accent" target="_blank" rel="noopener noreferrer">Falar no WhatsApp</a>
         <a href="index.html#contato" class="btn btn-ghost">Ver Contato Completo</a>
       </div>
     </div>
   </section>
 </main>
 
-<footer>
-  <div class="wrap foot-grid" style="display:grid;gap:40px;grid-template-columns:1fr 1fr 1fr 1fr">
-    <div>
-      <div class="brand" style="margin-bottom:14px"><span class="mark">SP</span><span>Imobiliária</span></div>
-      <p style="color:var(--muted)">Consultoria imobiliária em Canaã dos Carajás - PA</p>
-    </div>
-    <div>
-      <h4 style="font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#fff;margin-bottom:16px;font-weight:600">Serviços</h4>
-      <div style="display:flex;flex-direction:column;gap:8px">
-        <a href="index.html#servicos" style="color:var(--muted);font-size:15px">Serviços</a>
-        <a href="index.html#precos" style="color:var(--muted);font-size:15px">Preços</a>
-        <a href="index.html#sobre" style="color:var(--muted);font-size:15px">Sobre</a>
+<footer role="contentinfo">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="mark" aria-hidden="true">SP</div>
+        <div class="brand-title" style="color:#fff">SP Imobiliária</div>
+        <p>Consultoria imobiliária em Canaã dos Carajás - PA. Compra, venda e locação com total segurança.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Navegação</h4>
+        <a href="index.html">Início</a>
+        <a href="como-funciona.html">Como Funciona</a>
+        <a href="index.html#imoveis">Imóveis</a>
+        <a href="index.html#servicos">Serviços</a>
+        <a href="index.html#contato">Contato</a>
+      </div>
+      <div class="foot-col">
+        <h4>Contato</h4>
+        <a href="tel:+5594981598881">+55 94 98159-8881</a>
+        <span>AV dos Pioneiros, 16 - Centro</span>
+        <span>Canaã dos Carajás - PA</span>
+      </div>
+      <div class="foot-col">
+        <h4>Atendimento</h4>
+        <a href="https://wa.me/5594981598881" target="_blank" rel="noopener noreferrer">WhatsApp Direto</a>
+        <a href="index.html#contato">Fale Conosco</a>
       </div>
     </div>
-    <div>
-      <h4 style="font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#fff;margin-bottom:16px;font-weight:600">Contato</h4>
-      <div style="display:flex;flex-direction:column;gap:8px">
-        <a href="tel:+5594981598881" style="color:var(--muted);font-size:15px">+55 94 98159-8881</a>
-        <span style="color:var(--muted);font-size:15px">AV dos Pioneiros, 16 - CENTRO</span>
-      </div>
+    <div class="foot-bottom">
+      <span>© 2026 SP Imobiliária — Silvia Pazzinatto. Todos os direitos reservados.</span>
+      <a href="como-funciona.html" style="color:rgba(255,255,255,0.8)">Voltar ao topo ↑</a>
     </div>
-    <div>
-      <h4 style="font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#fff;margin-bottom:16px;font-weight:600">Redes</h4>
-      <div style="display:flex;gap:16px">
-        <a href="https://wa.me/5594981598881" target="_blank" style="color:var(--accent);font-size:24px">💬</a>
-      </div>
-    </div>
-  </div>
-  <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:48px;padding-top:22px;border-top:1px solid var(--border);color:var(--muted);font-size:13px">
-    <span>© 2026 SP Imobiliária — Todos os direitos reservados.</span>
-    <a href="index.html" style="color:var(--muted);font-size:13px">Voltar ao início ↑</a>
   </div>
 </footer>
 
-<a class="float-wa" href="https://wa.me/5594981598881" target="_blank">Chamar no WhatsApp</a>
+<a class="float-wa" href="https://wa.me/5594981598881?text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20Como%20Funciona%20e%20gostaria%20de%20falar%20com%20um%20consultor." target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp">
+  <span style="font-size:20px" aria-hidden="true">💬</span> Falar no WhatsApp
+</a>
 
 <script>
-document.addEventListener('DOMContentLoaded',function(){
-  var io=new IntersectionObserver(function(entries){
-    entries.forEach(function(e){
-      if(e.isIntersecting){
-        e.target.classList.add('in');
+// Menu mobile
+function toggleMenu() {
+  const nav = document.getElementById("nav");
+  const burger = document.querySelector(".burger");
+  if (nav && burger) {
+    const isOpen = nav.classList.toggle("nav-open");
+    burger.setAttribute("aria-expanded", isOpen);
+    burger.setAttribute("aria-label", isOpen ? "Fechar menu" : "Abrir menu");
+  }
+}
+
+// Sticky header com efeito de hover ao rolar
+window.addEventListener("scroll", function() {
+  const header = document.getElementById("header");
+  if (header) {
+    if (window.scrollY > 50) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+  }
+});
+
+// Fechar menu ao clicar em link
+document.querySelectorAll(".nav-links a").forEach(link => {
+  link.addEventListener("click", () => {
+    const nav = document.getElementById("nav");
+    const burger = document.querySelector(".burger");
+    if (nav && nav.classList.contains("nav-open")) {
+      nav.classList.remove("nav-open");
+      if (burger) {
+        burger.setAttribute("aria-expanded", "false");
+        burger.setAttribute("aria-label", "Abrir menu");
+      }
+    }
+  });
+});
+
+// Intersection Observer para animações
+document.addEventListener("DOMContentLoaded", function() {
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add("in");
         io.unobserve(e.target);
       }
     });
-  }, {threshold:0.1});
-  document.querySelectorAll('section').forEach(function(el){io.observe(el)});
-  // Menu mobile
-  var burger=document.querySelector('.burger');
-  var nav=document.querySelector('.nav-links');
-  if(burger&&nav){burger.addEventListener('click',function(){nav.classList.toggle('nav-open');burger.setAttribute('aria-expanded',nav.classList.contains('nav-open'))})}
+  }, { threshold: 0.1 });
+  document.querySelectorAll("section").forEach(el => io.observe(el));
+});
+
+// Destacar link ativo no menu ao rolar
+const sections = document.querySelectorAll("section[id]");
+const navLinksHome = document.querySelectorAll(".nav-links a[href^='index.html']");
+const navLinksPage = document.querySelectorAll(".nav-links a[href^='como-funciona.html']");
+window.addEventListener("scroll", () => {
+  let scrollY = window.pageYOffset;
+  sections.forEach(section => {
+    let sectionHeight = section.offsetHeight;
+    let sectionTop = section.offsetTop - 100;
+    let sectionId = section.getAttribute("id");
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      navLinksHome.forEach(link => {
+        link.removeAttribute("aria-current");
+      });
+      navLinksPage.forEach(link => {
+        link.removeAttribute("aria-current");
+      });
+      if (sectionId === "inicio") {
+        document.querySelector('.nav-links a[href="index.html"]')?.setAttribute("aria-current", "page");
+      } else if (sectionId === "imoveis") {
+        document.querySelector('.nav-links a[href="index.html#imoveis"]')?.setAttribute("aria-current", "page");
+      } else if (sectionId === "servicos") {
+        document.querySelector('.nav-links a[href="index.html#servicos"]')?.setAttribute("aria-current", "page");
+      } else if (sectionId === "sobre") {
+        document.querySelector('.nav-links a[href="index.html#sobre"]')?.setAttribute("aria-current", "page");
+      } else if (sectionId === "depoimentos") {
+        document.querySelector('.nav-links a[href="index.html#depoimentos"]')?.setAttribute("aria-current", "page");
+      } else if (sectionId === "contato") {
+        document.querySelector('.nav-links a[href="index.html#contato"]')?.setAttribute("aria-current", "page");
+      }
+    }
+  });
 });
 </script>
 
